@@ -8,9 +8,12 @@
 int main(void)
 {
 	int i;
+	int p;
 
-	for (i = 'z'; i <= 'a'; i++)
+	for (i = 48; i <= 58; i++)
 		putchar(i);
+	for (p = 'a'; p <= 'f'; p++)
+		putchar(p);
 	putchar('\n');
 	return (0);
 }
