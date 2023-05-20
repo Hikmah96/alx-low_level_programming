@@ -9,7 +9,7 @@ int main(void)
 {
 	int ip;
 
-	for (ip = 'a'; ip <= 'z'; i++)
+	for (ip = 'a'; ip <= 'z'; ip++)
 	{
 	putchar(ip);
 	}
