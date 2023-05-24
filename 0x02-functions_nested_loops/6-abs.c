@@ -2,7 +2,7 @@
 
 /**
  * _abs - prints absolute value of a number
- * @int: an integer
+ * @i: an integer
  * Return: return integer
  */
 int _abs(int i)
@@ -11,7 +11,7 @@ int _abs(int i)
 	{
 		return (i);
 	}
-	else 
+	else
 	{
 		return (i *= -1);
 	}
