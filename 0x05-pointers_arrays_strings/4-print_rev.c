@@ -13,6 +13,6 @@ void print_rev(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 		len++;
 	for (j = len; j > 0; j--)
-		_putchar(s[i]);
+		_putchar(s[j]);
 	_putchar('\n');
 }
