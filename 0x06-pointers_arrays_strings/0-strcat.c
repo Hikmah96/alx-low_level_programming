@@ -8,8 +8,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int lendt;
-	int lensc;
+	int lendt = 0;
+	int lensc = 0;
 	int i;
 	int j;
 
