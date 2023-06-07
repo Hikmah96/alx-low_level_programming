@@ -8,13 +8,13 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int j;
-	int k;
-	int lenght = 0;
-	int value = 0;
-	int len1 = 0;
-	int len2 = 0;
+	unsigned int i;
+	unsigned int j;
+	unsigned int k;
+	unsigned lenght = 0;
+	unsigned value = 0;
+	unsigned len1 = 0;
+	unsigned len2 = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 		len1++;
