@@ -10,6 +10,11 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	int j;
+	int k;
+	int lenght = 0;
+	int value = 0;
+	int len1 = 0;
+	int len2 = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 		len1++;
@@ -25,8 +30,9 @@ unsigned int _strspn(char *s, char *accept)
 		}
 	}
 	if (value == 1)
-		return (value);
-	else
-		return (0);
+	{
+		lenght++;
+	}
+	return (lenght);
 }
 
