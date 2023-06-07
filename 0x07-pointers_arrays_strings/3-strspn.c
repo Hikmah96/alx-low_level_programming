@@ -12,7 +12,6 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int j;
 	unsigned int k;
 	unsigned int lenght = 0;
-	unsigned int value = 0;
 	unsigned int len1 = 0;
 	unsigned int len2 = 0;
 
@@ -25,13 +24,9 @@ unsigned int _strspn(char *s, char *accept)
 		for (k = 0; k < len2; k++)
 		{
 			if (accept[k] == s[j])
-				value = 1;
+				lenght++;
 			break;
 		}
-	}
-	if (value == 1)
-	{
-		lenght++;
 	}
 	return (lenght);
 }
