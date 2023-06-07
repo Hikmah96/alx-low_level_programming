@@ -24,8 +24,12 @@ unsigned int _strspn(char *s, char *accept)
 		for (k = 0; k < len2; k++)
 		{
 			if (accept[k] == s[j])
+			{
 				lenght++;
-			break;
+				break;
+			}
+			else if (accept[k + 1] == '\0')
+				return (lenght);
 		}
 	}
 	return (lenght);
