@@ -18,6 +18,7 @@ char *create_array(unsigned int size, char c)
 		ptr[count] = c;
 	if (size == 0)
 		return (NULL);
-	else
+	else 
 		return (ptr);
+	return (0);
 }
