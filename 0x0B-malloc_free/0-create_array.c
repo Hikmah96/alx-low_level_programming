@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ * create_array - function that creates array
  * @size: number of element
  * @c: charter
  * Return: pointer to an address
@@ -15,5 +16,8 @@ char *create_array(unsigned int size, char c)
 
 	for (count = 0; count < size; count++)
 		ptr[count] = c;
-	return (ptr);
+	if (size == 0)
+		return (NULL);
+	else
+		return (ptr);
 }
