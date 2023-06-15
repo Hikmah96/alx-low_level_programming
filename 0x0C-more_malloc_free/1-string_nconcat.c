@@ -21,15 +21,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1++;
 	for (i = 0; s2[i] != '\0'; i++)
 		len2++;
-	ptr = malloc(sizeof(char) * (len1 + (len2 - n) + 1));
+	ptr = malloc(sizeof(char) * (len1 + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 	for (j = 0; j < len1; j++)
 	{
 		ptr[j] = s1[j];
 	}
-	for (h = 0; j < n && j < len2; h++)
-		ptr[len1 + j] = s2[len2 - n + j];
-	s1[len1 + len2 - n] = '\0';
-	return (s1);
+	for (h = 0; h < n && h < len2; h++)
+		ptr[len1 + h] = s2[len2 - n + h];
+	ptr[len1 + len2 - n] = '\0';
+	return (ptr);
 }
