@@ -21,6 +21,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptrbyte = (unsigned *)ptr;
 	for (i = 0; i < nmemb; i++)
 		ptrbyte[i] = 0;
-	free(ptr);
 	return (ptr);
 }
