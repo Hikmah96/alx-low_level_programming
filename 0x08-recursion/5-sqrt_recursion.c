@@ -1,5 +1,7 @@
 #include "main.h"
 
+int theroot(int n, int i);
+
 /**
  * _sqrt_recursion - returns square root of a number
  * @n: the number
@@ -12,5 +14,20 @@ int _sqrt_recursion(int n)
 	else if (n < 0)
 		return (-1);
 	else
-		return (n * _sqrt_recursion(n - 1));
+		return (theroot(n, 0));
+}
+
+/**
+ * theroot - recurses to find square root
+ * @i: iterrator
+ * @n: the number
+ * Return: the square root
+ */
+int theroot(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (theroot(n, i + 1));
 }
