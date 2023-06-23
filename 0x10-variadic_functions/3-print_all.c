@@ -9,7 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *s, *p = "";
+	char *s;
+	char  *p = "";
 	va_list print;
 
 	va_start(print, format);
@@ -39,7 +40,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			p = ",";
+			p = ", ";
 			i++;
 		}
 	}
