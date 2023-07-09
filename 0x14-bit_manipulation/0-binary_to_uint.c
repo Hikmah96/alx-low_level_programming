@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * binary_to_uint - function that convert binary
- * to unsigned int
+ * binary_to_uint - a function that convert binary
+ * to an unsigned int
  * @b: pointer to a string
  * Return: converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	unsigned int converted = 0;
+	unsigned int  = 0;
 
 	if (b == NULL)
 		return (0);
